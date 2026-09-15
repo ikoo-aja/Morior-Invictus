@@ -13,3 +13,14 @@ document.addEventListener("click", function (e) {
         navbarNav.classList.remove("active");
     }
 });
+
+// Audio Play
+const ctaAudioBtn = document.querySelector("#cta-audio");
+const jengAudio = document.querySelector("#jeng-audio");
+
+if (ctaAudioBtn && jengAudio) {
+    ctaAudioBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        jengAudio.play();
+    });
+}
