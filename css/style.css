@@ -146,17 +146,26 @@ body {
     background-color: var(--primary);
     border-radius: 0.8rem;
     box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    transition: 0.3s;
+}
+
+.hero .content .cta:hover {
+    background-color: #1a7abf;
+    box-shadow: 1px 1px 10px rgba(43, 153, 237, 0.8);
+    transform: translateY(-3px);
 }
 
 /* About */
 .about,
 .menu,
+.gallery,
 .contact {
     padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
 .menu h2,
+.gallery h2,
 .contact h2 {
     text-align: center;
     font-size: 2.6rem;
@@ -165,6 +174,7 @@ body {
 
 .about h2 span,
 .menu h2 span,
+.gallery h2 span,
 .contact h2 span {
     color: var(--primary);
 }
@@ -200,11 +210,13 @@ body {
 
 /* Menu */
 .menu h2,
+.gallery h2,
 .contact h2 {
     margin-bottom: 1rem;
 }
 
 .menu p,
+.gallery p,
 .contact p {
     text-align: center;
     max-width: 30rem;
@@ -223,6 +235,11 @@ body {
 .menu .row .menu-card {
     text-align: center;
     padding-bottom: 4rem;
+    transition: 0.3s;
+}
+
+.menu .row .menu-card:hover {
+    transform: translateY(-10px);
 }
 
 .menu .row .menu-card img {
@@ -234,6 +251,34 @@ body {
 
 .menu .row .menu-card .menu-card-title {
     margin-top: 1rem auto 0.5rem;
+}
+
+/* Gallery */
+.gallery .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.gallery .row .gallery-card {
+    flex: 1 1 30rem;
+    max-width: 30rem;
+}
+
+.gallery .row .gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.gallery .row .gallery-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(43, 153, 237, 0.5);
 }
 
 /* Contact */
@@ -280,6 +325,13 @@ body {
     color: #fff;
     background-color: var(--primary);
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact .row form .btn:hover {
+    background-color: #1a7abf;
+    box-shadow: 1px 1px 10px rgba(43, 153, 237, 0.8);
+    transform: translateY(-3px);
 }
 
 /* Footer */
